@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'DeathStar-VmWB';
+    src: url(../fonts/DeathStar-VmWB.ttf);
+}
+
+.users_block {
+    padding: 20px 40px;
+}
+
+.users_block table {
+    border-collapse: collapse;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.users_block table td {
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: 'DeathStar-VmWB';
+}
+
+.users_block table tbody .planet_td {
+    cursor: pointer;
+}
+
+.users_block table tbody .planet_td:hover {
+    color: #5c6d7f;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/Death-Star.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.users_block table .header_tr td {
+    padding: 25px 50px;
+    background-color: ivory;
+    position: sticky;
+    z-index: 1;
+    top: -1px;
+    font-size: 18px;
+}
+
+.users_block table .header_tr td:first-child {
+    text-align: center;
+}
+
+.users_block table td:first-child {
+    text-align: start;
+}
+
+td div img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+td div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_img {
+    left: 70px;
+    top: 100px;
+    position: fixed;
+
+}
+
+.planet_modal {
+    border: 1px solid black;
+    background-image: url(../img/Death-Star.jpg);
+    text-align: center;
+    font-family: 'DeathStar-VmWB';
+    color: #cccccc;
+    /* color: #5c6d7f; */
+    width: 360px;
+    height: 200px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+}
+
+.planet_modal .close_btn {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #cccccc;
+    /* color: #5c6d7f; */
+    cursor: pointer;
+}
+
+.info_wrapper {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_line_div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_line_div .content {
+    color: #c0d1e2;
+}
+
+.modal_line_div .title{
+    color: #ccccc0;
+    opacity: 0.7;
+}
+
+.modal_title{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
